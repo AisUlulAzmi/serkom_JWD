@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+body {
+  background-image: url("../image/BG.png");
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-nama {
+  font-size: 13px;
+}
+
+.text-brand {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.text-menu {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.custom-card {
+  border-top-left-radius: 30px; /* Sudut kiri atas rounded */
+  border-top-right-radius: 30px; /* Sudut kanan atas rounded */
+  border-bottom-left-radius: 30px; /* Sudut kiri bawah rounded */
+  border-bottom-right-radius: 30px; /* Sudut kanan bawah rounded */
+  -webkit-box-shadow: 0px 0px 9px 3px rgba(166, 166, 166, 1);
+  -moz-box-shadow: 0px 0px 9px 3px rgba(166, 166, 166, 1);
+  box-shadow: 0px 0px 9px 3px rgba(166, 166, 166, 1);
+}
+
+.img-hero {
+  border-bottom-left-radius: 30px; /* Sudut kiri bawah rounded */
+  border-bottom-right-radius: 30px; /* Sudut kanan bawah rounded */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Jarak antara setiap form-group */
+}
+
+.form-group label {
+  width: 400px; /* Lebar label */
+}
+
+.form-group input {
+  flex: 1; /* Agar input menempati sisa ruang yang tersedia */
+}
+
+#form-pilih {
+  width: 670px;
+}
+
+@media (max-width: 767px) {
+  .custom-card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .custom-card {
+    margin: 0 10px 15px 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #form-pilih {
+    width: 790px;
+  }
+}
+
+@media (max-width: 991px) {
+  .form-group label {
+    width: 250px; /* Lebar label */
+  }
+
+  #form-pilih {
+    width: 450px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-group {
+    flex-direction: column; /* Mengubah tata letak menjadi satu kolom pada perangkat seluler */
+    align-items: stretch; /* Memastikan elemen-elemen memanjang sepenuhnya */
+  }
+
+  .form-group label {
+    width: auto; /* Lebar label otomatis agar responsif pada perangkat seluler */
+    margin-bottom: 5px; /* Jarak antar form-group pada perangkat seluler */
+  }
+}
+
+.card-img-top {
+  width: 50%; /* Atur ukuran sesuai kebutuhan, misalnya 80% dari lebar kontainer */
+  height: auto; /* Menjaga rasio aspek gambar */
+  margin: auto; /* Memusatkan gambar */
+  object-fit: cover; /* Memastikan gambar terpotong tanpa distorsi */
+
+}
+
+
